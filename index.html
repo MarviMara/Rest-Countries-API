@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries API</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="page-title">
+            <h2 class="title">Where is the world ?</h2>
+        </div>
+
+        <div class="thme-switch">
+            <i class="fa-regular fa-moon"></i>
+            <!-- <i class="fa-solid fa-moon"></i> -->
+
+            <span class="theme-text">Dark Mode</span>
+        </div>
+    </header>
+
+
+    <div class="filters">
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search-input" type="text" id="search-input" placeholder="Search for a country..." />
+        </div>
+
+
+        <!-- Custom dropdown structure -->
+        <div class="custom-dropdown" id="custom-dropdown">
+            <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown-selected" id="dropdown-selected">Filter by region
+            </div>
+
+            <div class="dropdown-options" id="dropdown-options">
+                <div class="dropdown-option" data-value="">All Regions</div>
+                <div class="dropdown-option" data-value="Africa">Africa</div>
+                <div class="dropdown-option" data-value="Americas">Americas</div>
+                <div class="dropdown-option" data-value="Asia">Asia</div>
+                <div class="dropdown-option" data-value="Europe">Europe</div>
+                <div class="dropdown-option" data-value="Oceania">Oceania</div>
+            </div>
+        </div>
+    </div>
+
+    <section id="countries-list">
+        <!-- Country teasers will be displayed here -->
+    </section>
+
+
+</body>
+
+</html>
